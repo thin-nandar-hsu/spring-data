@@ -1,0 +1,9 @@
+com\solt\evaluator\MultiplyEvaluator.class
+com\solt\render\FormalRender.class
+com\solt\evaluator\Evaluator.class
+com\solt\render\VerboseRender.class
+com\solt\service\EvaluatorService.class
+com\solt\Main.class
+com\solt\evaluator\AddEvaluator.class
+com\solt\ds\Pair.class
+com\solt\render\RenderExpression.class

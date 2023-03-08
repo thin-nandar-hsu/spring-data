@@ -1,5 +1,6 @@
 package com.example.democallbacktemplate;
 
+import com.example.democallbacktemplate.ds.Employee;
 import com.example.democallbacktemplate.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -24,5 +25,25 @@ public class DemoCallbackTemplateApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         employeeService.listForEmployee().forEach(System.out::println);
+
+        //RowCallBackHandler
+        System.out.println("Average Salary::" + employeeService.avgRollCallBackHandler());
+
+        //ResultSetExtractor
+        System.out.println("Average Salary::" + employeeService.avgResultSetExtractor());
+
+        // Update
+        System.out.println();
+        employeeService.creatEmployee(new Employee
+                (6,"Thu","Zar","thuz@gmail.com",5000));
+        employeeService.listForEmployee().forEach(System.out::println);
+
+        // *
+        System.out.println("Average Salary of Native Way:" + employeeService.avgNativeWay());
+
+        // *
+        System.out.println("Average Salary of Modern Way:" + employeeService.avgModernWay());
+        }
     }
-}
+
+
