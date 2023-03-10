@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-callback-template" />
+        <module name="one-to-many-demo" />
         <module name="demo-connection-jdbc" />
-        <module name="interoperability" />
-        <module name="call-back-in-java" />
         <module name="single-work-unit" />
+        <module name="interoperability" />
+        <module name="one-to-one-demo" />
+        <module name="call-back-in-java" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +22,8 @@
       <module name="demo-callback-template" options="-parameters" />
       <module name="demo-connection-jdbc" options="-parameters" />
       <module name="interoperability" options="-parameters" />
+      <module name="one-to-many-demo" options="-parameters" />
+      <module name="one-to-one-demo" options="-parameters" />
       <module name="single-work-unit" options="-parameters" />
     </option>
   </component>
