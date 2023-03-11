@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/interoperability/pom.xml" />
         <option value="$PROJECT_DIR$/one-to-one-demo/pom.xml" />
         <option value="$PROJECT_DIR$/one-to-many-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/many-to-many-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/zoo-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/product-order/pom.xml" />
       </list>
     </option>
   </component>

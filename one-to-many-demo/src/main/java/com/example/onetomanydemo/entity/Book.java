@@ -17,7 +17,7 @@ public class Book {
     private double price;
     private String gender;
 
-    // Owner table has @JoinTable is cause of *Optional cases*
+    // Bi-Directional has @JoinTable is cause of *Optional cases*
     @JoinTable(name = "book_author" ,
             joinColumns = @JoinColumn(name = "book_id",referencedColumnName = "bookId"),
              inverseJoinColumns = @JoinColumn(name = "author_id",referencedColumnName = "authorId"))
