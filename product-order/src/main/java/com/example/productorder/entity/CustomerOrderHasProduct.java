@@ -7,7 +7,8 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class CustomerOrederHasProduct {
+@Table(name = "cus_product_order")
+public class CustomerOrderHasProduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +17,14 @@ public class CustomerOrederHasProduct {
     @ManyToOne
     private Product product;
 
+    @ManyToOne
+    private CustomerOrder customerOrder;
 
+    public CustomerOrderHasProduct(){
 
+    }
+
+    public CustomerOrderHasProduct(int id) {
+        this.id = id;
+    }
 }

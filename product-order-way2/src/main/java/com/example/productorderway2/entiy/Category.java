@@ -1,4 +1,4 @@
-package com.example.productorder.entity;
+package com.example.productorderway2.entiy;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,10 +20,11 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private List<Product> products = new ArrayList<>();
 
-    public void addProduct(Product product){
-        product.setCategory(this);
+    public void addProducts(Product product){
         this.products.add(product);
+        product.setCategory(this);
     }
+
 
     public Category(){
 

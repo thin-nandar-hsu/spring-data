@@ -1,4 +1,4 @@
-package com.example.productorder.entity;
+package com.example.productorderway2.entiy;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -25,8 +25,8 @@ public class Customer {
     private List<CustomerOrder> customerOrders = new ArrayList<>();
 
     public void addOrder(CustomerOrder customerOrder){
-        customerOrder.setCustomer(this);
         this.customerOrders.add(customerOrder);
+        customerOrder.setCustomer(this);
     }
 
     public Customer(){

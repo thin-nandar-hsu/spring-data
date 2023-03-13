@@ -27,7 +27,7 @@ public class Student extends IdClass {
      private List <Subject> subject= new ArrayList<>();
 
     public void addSubj(Subject subject){
-        subject.getStudent().add(this);
+        subject.getStudents().add(this);
         this.subject.add(subject);
       }
 

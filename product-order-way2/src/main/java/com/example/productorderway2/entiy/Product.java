@@ -1,4 +1,4 @@
-package com.example.productorder.entity;
+package com.example.productorderway2.entiy;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -18,18 +18,19 @@ public class Product {
     private String name;
     private int price;
     private String description;
-//    private LocalDate date;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Category category;
 
-    @OneToMany(mappedBy = "product")
-    private List<CustomerOrderHasProduct> customerOrderHasProducts = new ArrayList<>();
+    @JoinTable(name ="product_order")
+    @ManyToMany
+    private List<CustomerOrder> customerOrders = new ArrayList<>();
 
-    public void addId(CustomerOrderHasProduct customerOrderHasProduct){
-        customerOrderHasProduct.setProduct(this);
-        this.customerOrderHasProducts.add(customerOrderHasProduct);
+    public void addCusOrder(CustomerOrder customerOrder){
+        this.customerOrders.add(customerOrder);
+        customerOrder.getProducts().add(this);
     }
+
 
     public Product(){
 

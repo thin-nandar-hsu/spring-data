@@ -22,10 +22,10 @@ public class Subject extends IdClass {
 
     //@JoinTable(name = "course")
     @ManyToMany(mappedBy = "subject")
-    private List<Student> student= new ArrayList<>();
+    private List<Student> students= new ArrayList<>();
 
     public void addStu(Student student){
-        this.student.add(student);
+        this.students.add(student);
     }
 
 
