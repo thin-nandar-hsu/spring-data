@@ -14,7 +14,10 @@
         <option value="$PROJECT_DIR$/many-to-many-demo/pom.xml" />
         <option value="$PROJECT_DIR$/zoo-demo/pom.xml" />
         <option value="$PROJECT_DIR$/product-order/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/product-order-way2/pom.xml" />
+=======
+>>>>>>> spring-data/master
       </list>
     </option>
   </component>

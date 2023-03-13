@@ -22,10 +22,17 @@ public class Subject extends IdClass {
 
     //@JoinTable(name = "course")
     @ManyToMany(mappedBy = "subject")
+<<<<<<< HEAD
     private List<Student> students= new ArrayList<>();
 
     public void addStu(Student student){
         this.students.add(student);
+=======
+    private List<Student> student= new ArrayList<>();
+
+    public void addStu(Student student){
+        this.student.add(student);
+>>>>>>> spring-data/master
     }
 
 

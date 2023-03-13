@@ -1,5 +1,6 @@
 package com.example.productorder.entity;
 
+<<<<<<< HEAD
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,12 +13,25 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "customer_order")
+=======
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+>>>>>>> spring-data/master
 public class CustomerOrder {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int amount;
+<<<<<<< HEAD
    private LocalDateTime time;
     private int confirmNum;
 
@@ -48,3 +62,14 @@ public class CustomerOrder {
 }
 
 
+=======
+
+    public CustomerOrder(){
+
+    }
+
+    public CustomerOrder(int amount) {
+        this.amount = amount;
+    }
+}
+>>>>>>> spring-data/master

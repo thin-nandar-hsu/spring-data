@@ -27,7 +27,11 @@ public class Student extends IdClass {
      private List <Subject> subject= new ArrayList<>();
 
     public void addSubj(Subject subject){
+<<<<<<< HEAD
         subject.getStudents().add(this);
+=======
+        subject.getStudent().add(this);
+>>>>>>> spring-data/master
         this.subject.add(subject);
       }
 

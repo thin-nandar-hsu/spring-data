@@ -1,5 +1,6 @@
 package com.example.productorder.entity;
 
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,4 +33,7 @@ public class Category {
     public Category(String name) {
         this.name = name;
     }
+=======
+public class Category {
+>>>>>>> spring-data/master
 }
