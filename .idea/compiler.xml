@@ -14,6 +14,7 @@
         <module name="single-work-unit" />
         <module name="interoperability" />
         <module name="demo-connection-jdbc" />
+        <module name="spring-stand-jpa" />
         <module name="many-to-many-demo" />
         <module name="spring-jpa-elementcollectiontables" />
         <module name="one-to-one-demo" />

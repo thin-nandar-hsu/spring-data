@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>call-back-in-java</module>
+        <module>spring-stand-jpa</module>
     </modules>
 
     <properties>
