@@ -21,19 +21,17 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private List<Product> products = new ArrayList<>();
 
-    public void addProduct(Product product){
+    public void addProduct(Product product) {
         product.setCategory(this);
         this.products.add(product);
     }
 
-    public Category(){
+    public Category() {
 
     }
 
     public Category(String name) {
         this.name = name;
     }
-=======
-public class Category {
->>>>>>> spring-data/master
 }
+
