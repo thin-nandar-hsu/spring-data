@@ -17,6 +17,7 @@
         <module name="spring-stand-jpa" />
         <module name="many-to-many-demo" />
         <module name="spring-jpa-elementcollectiontables" />
+        <module name="convention-repository" />
         <module name="one-to-one-demo" />
         <module name="call-back-in-java" />
         <module name="product-order-way2" />
@@ -27,6 +28,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="car-company" options="-parameters" />
+      <module name="convention-repository" options="-parameters" />
       <module name="demo-callback-template" options="-parameters" />
       <module name="demo-connection-jdbc" options="-parameters" />
       <module name="interoperability" options="-parameters" />
